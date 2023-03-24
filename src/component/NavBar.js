@@ -4,16 +4,17 @@ export function NavBar() {
     const histroy = useHistory()
     return (
         <div className="nav ">
+             <button
+                className="but"
+                onClick={() => histroy.push("/")}
+            >DashBoard</button>
 
             <button
                 className="but"
                 onClick={() => histroy.push("/add")}
             >Add New User</button>
 
-            <button
-                className="but"
-                onClick={() => histroy.push("/")}
-            >DashBoard</button><br /><br /><br /><br /><br />
+           <br /><br /><br /><br /><br />
             
             <img
             id="trans"

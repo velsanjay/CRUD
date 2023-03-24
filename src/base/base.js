@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import { AddUser } from "../component/AddUser";
+import { BlankPage } from "../component/Blank";
 import { data } from "../component/data";
 import { EditUser } from "../component/Edit";
 import { NavBar } from "../component/NavBar";
@@ -27,6 +28,10 @@ export default function BaseApp() {
 
                 <Route path="/edit/:id">
                     <EditUser  user={user} setUser={setUser} />
+                </Route>
+
+                <Route path="**">
+                    <BlankPage/>
                 </Route>
 
             </Switch>
