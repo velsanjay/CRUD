@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 export function DashBoard({ user, setUser }) {
     const history = useHistory();
-    const RemoveFun = (idx) => {
+  const RemoveFun = (idx) => {
 
         const alterList = user.filter((prop) => prop.id != idx)
         setUser(alterList)
